@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vansh Patel | Software Testing Intern & QA Portfolio</title>
+    <meta name="description" content="Portfolio of Vansh Patel, a Software Testing Intern & Computer Engineering Student specializing in QA, Manual Testing, and Bug Reporting.">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="spinner-box">
+            <div class="configure-border-1">  
+                <div class="configure-core"></div>
+            </div>  
+            <div class="configure-border-2">  
+                <div class="configure-core"></div>
+            </div>
+            <p class="loader-text mt-3 text-uppercase tracking-wider">Loading QA Workspace...</p>
+        </div>
+    </div>
+
+    <!-- Particle Background Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="text-primary">&lt;</span>Vansh<span class="text-dark">.QA</span><span class="text-primary"> /&gt;</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="d-flex align-items-center min-vh-100 position-relative">
+        <div class="container">
+            <div class="row align-items-center flex-column-reverse flex-lg-row">
+                <div class="col-lg-7 text-center text-lg-start mt-4 mt-lg-0">
+                    <h5 class="text-primary font-mono mb-2 animate-fade-in">// Hi, my name is</h5>
+                    <h1 class="display-3 fw-bold text-dark mb-2">Vansh Patel</h1>
+                    <h2 class="h3 mb-4 text-secondary">
+                        I am a <span class="typewriter text-primary fw-semibold" data-words='["Software Testing Intern", "QA Enthusiast", "Computer Engineering Student"]'></span>
+                    </h2>
+                    <p class="lead text-muted mb-4 max-w-xl">
+                        Passionate Software Testing Intern with hands-on experience in Manual Testing, Test Case Design, Bug Reporting, and Quality Assurance. Dedicated to delivering reliable, bug-free, and user-friendly software solutions.
+                    </p>
+                    <div class="d-flex justify-content-center justify-content-lg-start gap-3">
+                        <a href="#contact" class="btn btn-primary px-4 py-2 fw-semibold">Contact Me</a>
+                        <a href="vansh_resume.pdf" class="btn btn-outline-primary px-4 py-2 fw-semibold" download><i class="fa-solid fa-download me-2"></i>Download CV</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-flex justify-content-center align-items-center">
+                    <div class="profile-img-container">
+                        <img src="profile.jpg" alt="Vansh Patel Profile Picture" class="img-fluid profile-img">
+                        <div class="bug-badge floating-element-1"><i class="fa-solid fa-bug text-dark me-1"></i> Bug Solved</div>
+                        <div class="check-badge floating-element-2"><i class="fa-solid fa-circle-check text-dark me-1"></i> Passed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down-indicator">
+            <a href="#about"><i class="fa-solid fa-chevron-down text-muted"></i></a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section-padding py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6">
+                    <div class="glass-card p-4 h-100">
+                        <h3 class="text-dark mb-3">My QA Journey</h3>
+                        <p class="text-muted">
+                            As a 5th-semester Computer Engineering student, I naturally gravitated towards Software Quality Assurance. I enjoy exploring codebases through the lens of a user while evaluating security, integrity, and efficiency logic behind the scenes. 
+                        </p>
+                        <p class="text-muted mb-0">
+                            My core philosophy is that excellent software isn't just about functional logic; it's defined by reliability, intuitive UX, and resilience under extreme test scenarios. 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="glass-card p-4 h-100">
+                        <h3 class="text-dark mb-3">Education & Blueprint</h3>
+                        <div class="timeline-compact">
+                            <div class="timeline-item-compact">
+                                <span class="timeline-date">Expected 2027</span>
+                                <h5 class="mb-1 text-dark">Diploma in Computer Engineering</h5>
+                                <p class="text-muted small mb-0">Currently pursuing 5th Semester. Maintaining a 9.14 SPI as of 3rd Semester metrics.</p>
+                            </div>
+                            <div class="timeline-item-compact mt-3">
+                                <span class="timeline-date">Present</span>
+                                <h5 class="mb-1 text-dark">Career Objective</h5>
+                                <p class="text-muted small mb-0">Aiming to leverage comprehensive UI, black-box, integration, and functional test paradigms to fast-track modern product lifecycles.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Metric Section -->
+    <section id="achievements" class="py-5 bg-darker-slate">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-6 col-md-3">
+                    <div class="stat-card p-3">
+                        <h2 class="counter text-primary fw-bold display-5" data-target="15">0</h2>
+                        <p class="text-muted text-uppercase small mb-0">Projects Evaluated</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-card p-3">
+                        <h2 class="counter text-primary fw-bold display-5" data-target="250">0</h2>
+                        <p class="text-muted text-uppercase small mb-0">Test Cases Written</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-card p-3">
+                        <h2 class="counter text-primary fw-bold display-5" data-target="85">0</h2>
+                        <p class="text-muted text-uppercase small mb-0">Bugs Logged</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-card p-3">
+                        <h2 class="counter text-primary fw-bold display-5" data-target="5">0</h2>
+                        <p class="text-muted text-uppercase small mb-0">Certifications Earned</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Skills & Competencies</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="glass-card p-4">
+                        <h4 class="text-dark mb-4"><i class="fa-solid fa-flask me-2 text-primary"></i>Technical Expertise</h4>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="text-muted d-flex justify-content-between mb-1"><span>Manual Testing</span><span>95%</span></label>
+                                <div class="progress-bar-wrapper"><div class="progress-bar-fill" data-width="95%"></div></div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="text-muted d-flex justify-content-between mb-1"><span>Black Box Testing</span><span>90%</span></label>
+                                <div class="progress-bar-wrapper"><div class="progress-bar-fill" data-width="90%"></div></div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="text-muted d-flex justify-content-between mb-1"><span>Bug Reporting & Log Tracking</span><span>90%</span></label>
+                                <div class="progress-bar-wrapper"><div class="progress-bar-fill" data-width="90%"></div></div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="text-muted d-flex justify-content-between mb-1"><span>Test Case Writing</span><span>88%</span></label>
+                                <div class="progress-bar-wrapper"><div class="progress-bar-fill" data-width="88%"></div></div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="text-muted d-flex justify-content-between mb-1"><span>SDLC / STLC Matrices</span><span>85%</span></label>
+                                <div class="progress-bar-wrapper"><div class="progress-bar-fill" data-width="85%"></div></div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="text-muted d-flex justify-content-between mb-1"><span>Git & GitHub Workflows</span><span>80%</span></label>
+                                <div class="progress-bar-wrapper"><div class="progress-bar-fill" data-width="80%"></div></div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="text-muted d-flex justify-content-between mb-1"><span>HTML5 / CSS3 / JavaScript</span><span>75%</span></label>
+                                <div class="progress-bar-wrapper"><div class="progress-bar-fill" data-width="75%"></div></div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="text-muted d-flex justify-content-between mb-1"><span>MS Excel (Data Logging)</span><span>85%</span></label>
+                                <div class="progress-bar-wrapper"><div class="progress-bar-fill" data-width="85%"></div></div>
+                            </div>
+                        </div>
+                        <div class="mt-4 pt-2">
+                            <span class="badge skill-badge">Regression Testing</span>
+                            <span class="badge skill-badge">Smoke Testing</span>
+                            <span class="badge skill-badge">Retesting</span>
+                            <span class="badge skill-badge">Functional Validation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="glass-card p-4 h-100">
+                        <h4 class="text-dark mb-4"><i class="fa-solid fa-users me-2 text-primary"></i>Core Strengths</h4>
+                        <div class="d-flex flex-column gap-4 mt-2">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="soft-skill-icon"><i class="fa-solid fa-comments text-primary"></i></div>
+                                <div>
+                                    <h6 class="text-dark mb-1">Communication</h6>
+                                    <p class="text-muted small mb-0">Bridging explicit documentation logs cleanly between design, product, and build engineers.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="soft-skill-icon"><i class="fa-solid fa-puzzle-piece text-primary"></i></div>
+                                <div>
+                                    <h6 class="text-dark mb-1">Problem Solving</h6>
+                                    <p class="text-muted small mb-0">Isolating intricate step-reproduction trees to locate ambiguous architectural anomalies.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="soft-skill-icon"><i class="fa-solid fa-people-group text-primary"></i></div>
+                                <div>
+                                    <h6 class="text-dark mb-1">Teamwork</h6>
+                                    <p class="text-muted small mb-0">Thriving seamlessly inside agile environments alongside diverse production squads.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="soft-skill-icon"><i class="fa-solid fa-clock text-primary"></i></div>
+                                <div>
+                                    <h6 class="text-dark mb-1">Time Management</h6>
+                                    <p class="text-muted small mb-0">Prioritizing critical deployment blocks with accurate timeline scheduling projections.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding py-5 bg-darker-slate">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="main-timeline">
+                        <div class="timeline-card-wrapper">
+                            <div class="glass-card p-4">
+                                <span class="badge bg-primary text-white float-end mb-2 mb-md-0">Active Timeline</span>
+                                <h4 class="text-dark mb-1">Software Testing Intern</h4>
+                                <h5 class="text-primary h6 mb-3 font-mono">Quality Assurance Engineering</h5>
+                                <hr class="border-light my-3">
+                                <p class="text-muted">Currently mastering and driving localized QA engineering workflows. Main responsibilities include:</p>
+                                <ul class="text-muted row g-2 list-unstyled ps-0">
+                                    <li class="col-md-6"><i class="fa-solid fa-square-check text-primary me-2"></i>Created comprehensive End-to-End Test Cases.</li>
+                                    <li class="col-md-6"><i class="fa-solid fa-square-check text-primary me-2"></i>Executed Functional & Integration Testing.</li>
+                                    <li class="col-md-6"><i class="fa-solid fa-square-check text-primary me-2"></i>Performed explicit Retesting & Verification tasks.</li>
+                                    <li class="col-md-6"><i class="fa-solid fa-square-check text-primary me-2"></i>Logged structural application vulnerabilities.</li>
+                                    <li class="col-md-6"><i class="fa-solid fa-square-check text-primary me-2"></i>Compiled clear analytical Bug Reports.</li>
+                                    <li class="col-md-6"><i class="fa-solid fa-square-check text-primary me-2"></i>Collaborated with Development Team workflows.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Testing Highlights & Projects</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="glass-card h-100 overflow-hidden project-card">
+                        <div class="project-img-holder position-relative">
+                            <img src="https://via.placeholder.com/600x350/e2e8f0/4f46e5?text=Air+Quality+Prediction+System+Testing" alt="Air Quality Prediction Project Screen" class="w-100 img-fluid">
+                            <div class="project-layer-overlay d-flex align-items-center justify-content-center">
+                                <span class="btn btn-sm btn-outline-dark px-3"><i class="fa-solid fa-expand me-2"></i>Inspect QA Scope</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <span class="badge bg-secondary text-white mb-2"><i class="fa-solid fa-vial me-1"></i> QA Case Study</span>
+                            <h4 class="text-dark mb-2">Air Quality Prediction System</h4>
+                            <p class="text-muted small">
+                                Managed the validation and verification cycle for a complex environmental analytical forecasting environment.
+                            </p>
+                            <h6 class="text-dark font-mono small mb-2">Testing Execution Focus:</h6>
+                            <ul class="text-muted small ps-3 mb-4">
+                                <li>Conducted strict algorithmic functional validation.</li>
+                                <li>Authored cross-condition boundary integration test matrices.</li>
+                                <li>Logged real-time analytical anomalies into active bug reports.</li>
+                                <li>Verified logic patches via strict regression tracking.</li>
+                            </ul>
+                            <div class="d-flex flex-wrap gap-1 mb-4">
+                                <span class="badge tech-badge">Functional Testing</span>
+                                <span class="badge tech-badge">Regression</span>
+                                <span class="badge tech-badge">Excel Matrix</span>
+                                <span class="badge tech-badge">System Validation</span>
+                            </div>
+                            <button type="button" class="btn btn-outline-primary btn-sm w-100" data-bs-toggle="modal" data-bs-target="#projectModal">View Testing Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section-padding py-5 bg-darker-slate">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Certifications</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-4 col-sm-6">
+                    <div class="glass-card p-3 d-flex align-items-center gap-3 cert-card">
+                        <div class="cert-icon-box text-primary"><i class="fa-solid fa-award fa-2x"></i></div>
+                        <div>
+                            <h6 class="text-dark mb-0">C-DAC</h6>
+                            <small class="text-muted d-block mb-1">Credential verified</small>
+                            <a href="#" class="btn btn-link btn-sm p-0 text-primary text-decoration-none font-mono small">View Certificate &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="glass-card p-3 d-flex align-items-center gap-3 cert-card">
+                        <div class="cert-icon-box text-primary"><i class="fa-solid fa-shield-halved fa-2x"></i></div>
+                        <div>
+                            <h6 class="text-dark mb-0">CCC Verification</h6>
+                            <small class="text-muted d-block mb-1">Credential verified</small>
+                            <a href="#" class="btn btn-link btn-sm p-0 text-primary text-decoration-none font-mono small">View Certificate &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="glass-card p-3 d-flex align-items-center gap-3 cert-card">
+                        <div class="cert-icon-box text-primary"><i class="fa-solid fa-certificate fa-2x"></i></div>
+                        <div>
+                            <h6 class="text-dark mb-0">MIC Specialization</h6>
+                            <small class="text-muted d-block mb-1">Credential verified</small>
+                            <a href="#" class="btn btn-link btn-sm p-0 text-primary text-decoration-none font-mono small">View Certificate &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mx-auto">
+                    <div class="glass-card p-3 d-flex align-items-center gap-3 cert-card">
+                        <div class="cert-icon-box text-primary"><i class="fa-solid fa-file-signature fa-2x"></i></div>
+                        <div>
+                            <h6 class="text-dark mb-0">CAP Qualification</h6>
+                            <small class="text-muted d-block mb-1">Credential verified</small>
+                            <a href="#" class="btn btn-link btn-sm p-0 text-primary text-decoration-none font-mono small">View Certificate &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mx-auto">
+                    <div class="glass-card p-3 d-flex align-items-center gap-3 cert-card">
+                        <div class="cert-icon-box text-primary"><i class="fa-solid fa-brain fa-2x"></i></div>
+                        <div>
+                            <h6 class="text-dark mb-0">Gemini AI Prompting</h6>
+                            <small class="text-muted d-block mb-1">Credential verified</small>
+                            <a href="#" class="btn btn-link btn-sm p-0 text-primary text-decoration-none font-mono small">View Certificate &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-5">
+                    <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <h4 class="text-dark mb-3">Contact Channels</h4>
+                            <p class="text-muted mb-4">Have an opening for a dedicated QA Intern, or wish to talk about automated matrix structures? Drop a line directly.</p>
+                            
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="contact-meta-icon"><i class="fa-solid fa-envelope text-primary"></i></div>
+                                <div>
+                                    <span class="text-muted d-block small">Email Address</span>
+                                    <a href="mailto:vanshkalariya2020@gmail.com" class="text-dark text-decoration-none fw-medium">vanshkalariya2020@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="contact-meta-icon"><i class="fa-solid fa-phone text-primary"></i></div>
+                                <div>
+                                    <span class="text-muted d-block small">Phone Hotline</span>
+                                    <a href="tel:+919925276638" class="text-dark text-decoration-none fw-medium">+91 9925276638</a>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="contact-meta-icon"><i class="fa-solid fa-location-dot text-primary"></i></div>
+                                <div>
+                                    <span class="text-muted d-block small">Location Context</span>
+                                    <span class="text-dark fw-medium">Patan, Gujarat, India</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <h6 class="text-muted text-uppercase small mb-2 tracking-wider">Social Channels</h6>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com/vanshkalariya2020-del" class="social-icon-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://www.linkedin.com/in/vanshpatel6638/" class="social-icon-btn"><i class="fa-brands fa-github"></i></a>
+                                <a href="mailto:vanshkalariya2020@gmail.com" class="social-icon-btn"><i class="fa-solid fa-envelope"></i></a>
+                                <a href="tel:+919925276638" class="social-icon-btn"><i class="fa-solid fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="glass-card p-4 form-glassmorphism">
+                        <h4 class="text-dark mb-4">Transmission Terminal</h4>
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="formName" class="form-label text-muted small">Full Identifier (Name)</label>
+                                <input type="text" class="form-control" id="formName" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="formEmail" class="form-label text-muted small">Return Address (Email)</label>
+                                <input type="email" class="form-control" id="formEmail" placeholder="yourname@domain.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="formSubject" class="form-label text-muted small">Subject Context</label>
+                                <input type="text" class="form-control" id="formSubject" placeholder="QA Project Proposal / Opportunity" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="formMessage" class="form-label text-muted small">Payload Data (Message)</label>
+                                <textarea class="form-control" id="formMessage" rows="4" placeholder="Write your message core here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 py-2 fw-semibold">Send Secure Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Layout -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content p-2">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title"><i class="fa-solid fa-square-poll-vertical text-primary me-2"></i>Testing Parameters Overview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="text-primary mb-2">Air Quality Prediction Suite</h5>
+                    <p class="text-muted">Detailed review tracking verified configurations across varied environmental metrics:</p>
+                    <table class="table table-striped text-start border align-middle small font-mono">
+                        <thead>
+                            <tr>
+                                <th>Test Node</th>
+                                <th>Methodology</th>
+                                <th>Target Focus</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>T-01_Functional</td>
+                                <td class="text-muted">Black Box Boundary</td>
+                                <td>Input threshold ranges for PM2.5 data arrays</td>
+                                <td class="text-success fw-medium"><i class="fa-solid fa-circle-check me-1"></i> Passed</td>
+                            </tr>
+                            <tr>
+                                <td>T-02_Integration</td>
+                                <td class="text-muted">Interface Mapping</td>
+                                <td>Data pipelines passing between engine modules</td>
+                                <td class="text-success fw-medium"><i class="fa-solid fa-circle-check me-1"></i> Passed</td>
+                            </tr>
+                            <tr>
+                                <td>T-03_Regression</td>
+                                <td class="text-muted">Sanity Tracing</td>
+                                <td>Post-patch evaluation of model calculation engine</td>
+                                <td class="text-warning fw-medium"><i class="fa-solid fa-arrows-spin me-1"></i> Retesting</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close Logs</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Terminal -->
+    <footer class="py-4 text-center border-top bg-darker-slate position-relative z-1">
+        <div class="container">
+            <p class="mb-1 text-muted small">&copy; 2026 Vansh Patel. All Rights Reserved.</p>
+            <p class="font-mono text-muted super-small mb-0">Built with Bootstrap 5 & Vanilla JS architecture. Build Status: <span class="text-success fw-medium">Stable (Light Elegant Edition)</span></p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="btn btn-primary rounded-circle" aria-label="Scroll back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Bootstrap Bundle JS with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript Engine -->
+    <script src="script.js"></script>
+</body>
+</html>
